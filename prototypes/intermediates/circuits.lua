@@ -51,10 +51,31 @@ vgal.data.extend({
         technology = "holmium-processing",
         ingredients = {
             { "electronic-circuit", 20 },
-            { "advanced-circuit",  2 }, -- 100
+            { "advanced-circuit",  2 },
+        },
+        fluid_ingredients = {
+            { "sulfuric-acid", 5 },
         },
         results = {
-            { "processing-unit", 1 } -- 500
+            { "processing-unit", 1 }
+        },
+    },
+    {
+        type = "recipe",
+        name = "copper-cable_hotfix",
+        prefix = "vgal",
+        icons = vgal.icon.register {
+            vgal.icon.get("copper-cable"),
+            vgal.icon.get_in("copper-cable"),
+        },
+        category = "electromagnetics",
+        energy_required = 0.5,
+        technology = "holmium-processing",
+        ingredients = {
+            { "copper-plate", 1 },  -- 170
+        },
+        results = {
+            { "copper-cable",  2 }, -- 100
         },
     },
     --
